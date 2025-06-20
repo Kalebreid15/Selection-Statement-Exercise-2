@@ -10,7 +10,8 @@
         public static void FavSubject()
         {
             Console.WriteLine("What is your favorite subject?");
-            string subject = Console.ReadLine();
+            string subject = (Console.ReadLine() ?? "").Trim();
+
 
 
             switch (subject.ToLower())
@@ -35,7 +36,7 @@
                     break;
 
             }
-            Console.ReadLine();
+            
 
         }
     }
